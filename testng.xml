@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FirstSuite">
+<groups>
+<run>
+<include name="firstgroup"></include>
+</run>
+</groups>
+  <test thread-count="5" name="Loan">
+  
+    <classes>
+      <class name="org.test.testng.PersonalLoan"/>
+      <class name="org.test.testng.CarLoan"/>
+      
+      
+      
+    </classes>
+    </test>
+    
+  <test name = "Car Loan">
+    <classes> 
+    <class name="org.test.testng.HomeLoan">
+    <methods>
+    
+    <include name = "six"/>
+    </methods>
+    </class>
+    
+    </classes>
+  </test>
+</suite>
